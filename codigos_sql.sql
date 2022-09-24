@@ -88,13 +88,6 @@ SELECT gender, COUNT(gender) AS "Qtd por gêneros"
 FROM employees
 GROUP BY gender;
 
-/* Exercício 23 */
-SELECT  hire_date, COUNT(hire_date) AS "Data contratação"
-FROM employees
-GROUP BY hire_date
-ORDER BY COUNT(hire_date) DESC;
-
-
 
 ----------------------------------------------- /* /* CONSTRAINTS */*/ ----------------------------------------------- 
 
@@ -216,11 +209,6 @@ SELECT * from empresa.funcionarios;
 SELECT CONCAT(nome," tem ", idade," anos de idade! ") AS "nome_e_idade"
 	from empresa.funcionarios;
     
--- Exercício 27
-SELECT * FROM sakila.actor;
-SELECT CONCAT(" nome ", first_name, " sobrenome ", last_name) AS "nome_e_sobrenome"
-	from sakila.actor;
-    
 SELECT actor_id, CONCAT( first_name ," ", last_name ) AS "nome_e_sobrenome"
 	FROM  sakila.actor;
     
@@ -263,13 +251,6 @@ SELECT RIGHT(last_update,8) AS Horário FROM sakila.category;
 SELECT REPLACE(name,"Action","Action & Adventure") AS name
 	FROM category;
     
--- EXERCICIO 
-SELECT 
-	REPLACE(first_name, "MARY","Maria") AS Nome,
-    REPLACE(last_name,"SMITH", "Smith") AS Sobrenome
-    FROM customer
-WHERE last_name = "SMITH";
-   
 -- SUBSTR (TIRAR UMA STRING EM UM INTERVALO)
 SELECT last_update, SUBSTR(last_update,1,4) AS Ano,
 	SUBSTR(last_update, 6,2) AS Mês,
@@ -660,16 +641,3 @@ SELECT endereço.rua, pessoas.*
 FROM endereço
 RIGHT JOIN pessoas
 ON pessoas.id = endereço.pessoa_id;
-
-/* Desafio */
-USE employees;
-SELECT employees.first_name, employees.last_name, titles.title, salaries.salary, dept_manager.dept_no
-FROM employees
-INNER JOIN salaries
-ON employees.emp_no = salaries.emp_no
-INNER JOIN titles
-ON  employees.emp_no = titles.emp_no
-INNER JOIN dept_manager
-ON employees.emp_no= dept_manager.emp_no
-WHERE salaries.salary >= 15000 AND NOT titles.title = "Manager"
-ORDER BY salaries.salary DESC;
