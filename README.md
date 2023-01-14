@@ -1,2 +1,2 @@
 # projetos_programacao
-repositório de projetos pessoais feitos em python, scala, java 
+repositório de estudo scripts e notebooks de código completos
