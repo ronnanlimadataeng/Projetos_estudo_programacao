@@ -641,3 +641,5 @@ SELECT endereço.rua, pessoas.*
 FROM endereço
 RIGHT JOIN pessoas
 ON pessoas.id = endereço.pessoa_id;
+
+X
