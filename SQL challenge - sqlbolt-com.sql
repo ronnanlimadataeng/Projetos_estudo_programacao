@@ -22,12 +22,36 @@ select * from movies
 -----------------------------------------------------> Exercício 2 — Tarefas --  SQL Lesson 2: Queries with constraints (Pt. 1) 
 
 -- Encontre o filme com uma linha id de 6
+select title from movies where id = 6
 
-
--- Encontre os filmes lançados nos yeara nos de 2000 a 2010
-
+-- Encontre os filmes lançados nos year anos de 2000 a 2010
+select title from movies where year >= 2000 and year <= 2010
+select title from movies where year between 2000 and 2010
 
 -- Encontre os filmes não lançados nos year anos entre 2000 e 2010
-
+select title from movies where year not between 2000 and 2010
+select title from movies where year not in (select year from movies where year between 2000 and 2010)
+select Title from movies m where not EXISTS (select 1 from movies m2  where m2.Year >= 2000 and m2.Year <= 2010 and m2.Id = m.Id)
 
 -- Encontre os 5 primeiros filmes da Pixar e seus lançamentos year
+select title, year from movies limit 5
+
+
+----------------------------------------------------- https://sqlbolt.com/lesson/select_queries_with_constraints_pt_2 -----------------------------------------------------
+-----------------------------------------------------> Exercício 3 — Tarefas --  SQL Lesson 3: Queries with constraints (Pt. 2)
+-- Encontre todos os filmes Toy Story
+select * from movies where title like '%Toy Story%'
+
+-- Encontre todos os filmes dirigidos por John Lasseter
+
+
+-- Encontre todos os filmes (e diretores) não dirigidos por John Lasseter
+
+
+-- Encontre todos os filmes WALL-*
+
+
+
+
+
+
