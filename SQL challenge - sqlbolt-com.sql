@@ -121,7 +121,13 @@ select city, population from North_american_cities where country = "United State
 
 ----------------------------------------------------- https://sqlbolt.com/lesson/select_queries_with_joins -----------------------------------------------------
 -----------------------------------------------------> Exercício 6 — Tarefas --  SQL Lesson 6: Multi-table queries with JOINs
+-- Encontre as vendas nacionais e internacionais de cada filme /	Find the domestic and international sales for each movie
+select mv.title, sls.domestic_sales, sls.international_sales 
+from movies mv inner join boxoffice sls ON mv.id = sls.Movie_id 
 
+-- Mostre os números de vendas de cada filme que teve melhor desempenho internacional em vez de doméstico /	Show the sales numbers for each movie that did better internationally rather than domestically
+
+-- Liste todos os filmes por suas classificações em ordem decrescente /	List all the movies by their ratings in descending order
 
 
 
