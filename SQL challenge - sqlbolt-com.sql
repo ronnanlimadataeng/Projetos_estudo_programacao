@@ -43,13 +43,18 @@ select title, year from movies limit 5
 select * from movies where title like '%Toy Story%'
 
 -- Encontre todos os filmes dirigidos por John Lasseter
-
+select * from movies where director like '%John Lasseter%'
+select * from movies where director = 'John Lasseter'
 
 -- Encontre todos os filmes (e diretores) não dirigidos por John Lasseter
-
+select * from movies where director != 'John Lasseter'
 
 -- Encontre todos os filmes WALL-*
+select * from movies where title like '%WALL-%'
 
+
+----------------------------------------------------- https://sqlbolt.com/lesson/filtering_sorting_query_results -----------------------------------------------------
+-----------------------------------------------------> Exercício 4 — Tarefas --  SQL Lesson 4: Filtering and sorting Query results
 
 
 
