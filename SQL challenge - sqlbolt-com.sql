@@ -121,13 +121,23 @@ select city, population from North_american_cities where country = "United State
 
 ----------------------------------------------------- https://sqlbolt.com/lesson/select_queries_with_joins -----------------------------------------------------
 -----------------------------------------------------> Exercício 6 — Tarefas --  SQL Lesson 6: Multi-table queries with JOINs
+
 -- Encontre as vendas nacionais e internacionais de cada filme /	Find the domestic and international sales for each movie
 select mv.title, sls.domestic_sales, sls.international_sales 
 from movies mv inner join boxoffice sls ON mv.id = sls.Movie_id 
 
 -- Mostre os números de vendas de cada filme que teve melhor desempenho internacional em vez de doméstico /	Show the sales numbers for each movie that did better internationally rather than domestically
+select mv.title, sls.domestic_sales, sls.international_sales
+from movies mv 
+inner join boxoffice sls ON mv.id = sls.Movie_id
+where sls.international_sales > sls.domestic_sales
+
 
 -- Liste todos os filmes por suas classificações em ordem decrescente /	List all the movies by their ratings in descending order
+select mv.title, rating
+from movies mv 
+inner join boxoffice sls ON mv.id = sls.Movie_id
+order by rating desc
 
 
 
@@ -136,6 +146,59 @@ from movies mv inner join boxoffice sls ON mv.id = sls.Movie_id
 
 
 
+----------------------------------------------------- https://sqlbolt.com/lesson/select_queries_with_outer_joins -----------------------------------------------------
+-----------------------------------------------------> SQL Lesson 7: OUTER JOINs
+
+-- Encontre a lista de todos os prédios que possuem funcionários / Find the list of all buildings that have employees 
+select distinct building_name
+from buildings bui
+left join employees emp ON bui.building_name = emp.building
+where role is not null
+
+-- Encontre a lista de todos os edifícios e sua capacidade / Find the list of all buildings and their capacity
+select distinct bui.building_name, capacity
+from buildings bui
+left join employees emp ON bui.building_name = emp.building
+
+-- Liste todos os prédios e as funções distintas dos funcionários em cada prédio (incluindo prédios vazios) / List all buildings and the distinct employee roles in each building (including empty buildings) 
+select distinct bui.building_name, role
+from buildings bui
+left join employees emp ON bui.building_name = emp.building
+
+
+
+
+
+
+
+
+----------------------------------------------------- https://sqlbolt.com/lesson/select_queries_with_nulls -----------------------------------------------------
+-----------------------------------------------------> SQL Lesson 8: A short note on NULLs 
+-- Encontre o nome e a função de todos os funcionários que não foram atribuídos a um edifício / Find the name and role of all employees who have not been assigned to a building 
+select distinct emp.name, emp.role
+from employees emp
+where building is null
+
+-- Encontre os nomes dos prédios que não possuem funcionários / Find the names of the buildings that hold no employees 
+select distinct bui.building_name
+from buildings bui
+left join employees emp ON bui.building_name = emp.building
+where emp.building is null
+
+
+
+
+
+
+
+
+----------------------------------------------------- https://sqlbolt.com/lesson/select_queries_with_expressions -----------------------------------------------------
+-----------------------------------------------------> SQL Lesson 9: Queries with expressions 
+-- Liste todos os filmes e suas vendas combinadas em milhões de dólares / List all movies and their combined sales in millions of dollars
+
+-- Liste todos os filmes e suas classificações em porcentagem / List all movies and their ratings in percent
+
+-- Liste todos os filmes que foram lançados em anos pares / List all movies that were released on even number years
 
 
 
