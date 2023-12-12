@@ -15,6 +15,7 @@ O repositório será organizado nas seguintes seções:
   
     [Aplincando tags - Clusters, jobs , catálogos, schemas\databases, tabelas, colunas, modelos, queries, dashboards e warehouse](https://www.datainaction.dev/post/databricks-tags-tagueando-seu-ambiente)
 
+    [Databricks - Explodindo colunas STRING (Explode + From_json) usando SQL para acessar ARRAY e STRUCT](https://www.datainaction.dev/post/databricks-explodindo-colunas-string-explode-from_json-usando-sql-para-acessar-array-e-struct)
 
 
 - **Notas de Estudo**: Anotações pessoais e insights sobre a utilização da stack Databricks.
