@@ -1,7 +1,7 @@
 # Estudos e Anotações sobre Stack Databricks
 
 ## Introdução
-Bem-vindo ao repositório "Estudos e Anotações sobre Stack Databricks"! Este repositório é dedicado a compartilhar links úteis, notas de estudo, e recursos relacionados à stack Databricks, uma plataforma de análise de dados baseada em nuvem.
+Bem-vindo ao repositório Estudos e Anotações sobre Stack Databricks! Este repositório é dedicado a compartilhar links úteis, notas de estudo, e recursos relacionados à stack Databricks, uma plataforma de análise de dados baseada em nuvem.
 
 ## Objetivo
 O objetivo deste repositório é fornecer um ponto centralizado para recursos educacionais e notas pessoais sobre o uso e a exploração da stack Databricks. Isso inclui links para tutoriais, documentação oficial, melhores práticas, casos de uso, e exemplos práticos.
@@ -15,10 +15,18 @@ Contribuições são sempre bem-vindas! Se você tem algum recurso útil, notas 
 
 ## Conteúdo do Repositório
 O repositório será organizado nas seguintes seções:
-
 - **Links Úteis**: Coleção de links para tutoriais, documentação oficial, e outros recursos online.
+
+
+
 - **Notas de Estudo**: Anotações pessoais e insights sobre a utilização da stack Databricks.
+
+
+
 - **Exemplos Práticos**: Scripts, notebooks e exemplos de código para ajudar a entender melhor como usar o Databricks.
+
+
+
 
 ## Código de Conduta
 Espera-se que todos os contribuidores sigam um código de conduta baseado em respeito mútuo, inclusão e colaboração positiva. Qualquer comportamento inapropriado ou desrespeitoso não será tolerado.
