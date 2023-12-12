@@ -6,13 +6,6 @@ Bem-vindo ao repositório Estudos e Anotações sobre Stack Databricks! Este rep
 ## Objetivo
 O objetivo deste repositório é fornecer um ponto centralizado para recursos educacionais e notas pessoais sobre o uso e a exploração da stack Databricks. Isso inclui links para tutoriais, documentação oficial, melhores práticas, casos de uso, e exemplos práticos.
 
-## Como Contribuir
-Contribuições são sempre bem-vindas! Se você tem algum recurso útil, notas de estudo ou dicas sobre o Databricks, sinta-se à vontade para adicionar ao repositório. Para contribuir, siga estes passos:
-
-1. **Fork do Repositório**: Faça um fork do repositório para o seu perfil.
-2. **Adicione seu Conteúdo**: Adicione links, anotações ou qualquer outro recurso que você acha que será útil.
-3. **Faça um Pull Request**: Envie um pull request com suas adições ou mudanças.
-
 ## Conteúdo do Repositório
 O repositório será organizado nas seguintes seções:
 
