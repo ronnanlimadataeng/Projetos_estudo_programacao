@@ -16,7 +16,8 @@ Contribuições são sempre bem-vindas! Se você tem algum recurso útil, notas 
 ## Conteúdo do Repositório
 O repositório será organizado nas seguintes seções:
 - **Links Úteis**: Coleção de links para tutoriais, documentação oficial, e outros recursos online.
-    - comentando tabelas com o uso de AI[https://www.datainaction.dev/post/databricks-ai-suggested-comment-documente-suas-tabelas-de-forma-simples-r%C3%A1pida-e-autom%C3%A1tica]
+    - [comentando tabelas com o uso de AI](https://www.datainaction.dev/post/databricks-ai-suggested-comment-documente-suas-tabelas-de-forma-simples-r%C3%A1pida-e-autom%C3%A1tica)
+
 
 
 - **Notas de Estudo**: Anotações pessoais e insights sobre a utilização da stack Databricks.
