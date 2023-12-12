@@ -25,6 +25,7 @@ O repositório será organizado nas seguintes seções:
 
 
 - **Exemplos Práticos**: Scripts, notebooks e exemplos de código para ajudar a entender melhor como usar o Databricks.
+      - describe nome_schema.nome_tabela --> descrevemos os nomes e tipos da tabela mencionada assim como os comentarios.
 
 
 
