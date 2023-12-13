@@ -17,6 +17,7 @@ O repositório será organizado nas seguintes seções:
 
     [Databricks - Explodindo colunas STRING (Explode + From_json) usando SQL para acessar ARRAY e STRUCT](https://www.datainaction.dev/post/databricks-explodindo-colunas-string-explode-from_json-usando-sql-para-acessar-array-e-struct)
 
+    [%run vs dbutils.notebook.run()](https://www.datainaction.dev/post/databricks-casos-de-suporte-voc%C3%AA-sabe-a-diferen%C3%A7a-entre-run-e-dbutils-notebook-run)
 
 - **Notas de Estudo**: Anotações pessoais e insights sobre a utilização da stack Databricks.
 
